@@ -2,7 +2,7 @@
 /*
 Plugin Name: Gravity Forms Approvals
 Plugin URI: http://www.stevenhenty.com
-Description: Aggregate entries from multiple sites into a single installation
+Description: Demonstration of how to build a simple approvals add-on
 Version: 0.1
 Author: Steve Henty
 Author URI: http://www.stevenhenty.com
@@ -76,6 +76,7 @@ if ( class_exists( 'GFForms' ) ) {
 		//Registers the dashboard widget
 		public function dashboard_setup() {
 			wp_add_dashboard_widget( 'gf_approvals_dashboard', 'Forms Pending My Approval', array( $this, 'dashboard' ) );
+			wp_add_dashboard_widget( 'gf_forms_test', 'My Test Form', array( $this, 'test_dashboard' ) );
 		}
 
 		/**
@@ -435,7 +436,21 @@ if ( class_exists( 'GFForms' ) ) {
 				remove_action( 'gform_after_submission', array( 'GFZapier', 'send_form_data_to_zapier' ) );
 			}
 		}
+
+		/**
+		 * Displays the Dashboard UI
+		 */
+		public function test_dashboard() {
+
+			echo do_shortcode('[gravityform id=2]');
+
+			gravity_form_enqueue_scripts(2, true);
+			gravity_form(2,false, true,false, null, false);
+
+
+		}
 	}
+	new GFApprovals();
 }
 
-new GFApprovals();
+
