@@ -76,7 +76,6 @@ if ( class_exists( 'GFForms' ) ) {
 		//Registers the dashboard widget
 		public function dashboard_setup() {
 			wp_add_dashboard_widget( 'gf_approvals_dashboard', 'Forms Pending My Approval', array( $this, 'dashboard' ) );
-			wp_add_dashboard_widget( 'gf_forms_test', 'My Test Form', array( $this, 'test_dashboard' ) );
 		}
 
 		/**
@@ -437,18 +436,6 @@ if ( class_exists( 'GFForms' ) ) {
 			}
 		}
 
-		/**
-		 * Displays the Dashboard UI
-		 */
-		public function test_dashboard() {
-
-			echo do_shortcode('[gravityform id=2]');
-
-			gravity_form_enqueue_scripts(2, true);
-			gravity_form(2,false, true,false, null, false);
-
-
-		}
 	}
 	new GFApprovals();
 }
