@@ -3,13 +3,13 @@
 Plugin Name: Gravity Forms Approvals
 Plugin URI: http://www.stevenhenty.com
 Description: Demonstration of how to build a simple approvals add-on
-Version: 0.1
+Version: 1.0-beta-1
 Author: Steve Henty
 Author URI: http://www.stevenhenty.com
 License: GPL-2.0+
 
 ------------------------------------------------------------------------
-Copyright 2014  Steven Henty
+Copyright 2015 Steven Henty
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License, version 2, as
@@ -42,7 +42,7 @@ if ( class_exists( 'GFForms' ) ) {
 		protected $_version = '0.1';
 
 		// The Framework will display an appropriate message on the plugins page if necessary
-		protected $_min_gravityforms_version = '1.8.7';
+		protected $_min_gravityforms_version = '1.0-beta-1';
 
 		// A short, lowercase, URL-safe unique identifier for the add-on.
 		// This will be used for storing options, filters, actions, URLs and text-domain localization.
@@ -324,14 +324,16 @@ if ( class_exists( 'GFForms' ) ) {
 					<div>
 						<?php
 						if ( isset( $entry[ 'approval_status_' . $current_user->user_login ] ) && $entry[ 'approval_status_' . $current_user->user_login ] == 'pending' ) {
-							wp_nonce_field( 'gf_approvals' );
 							?>
-							<button name="gf_approvals_status" value="approved" type="submit" class="button">
-								<?php echo $approve_icon; ?> Approve
-							</button>
-							<button name="gf_approvals_status" value="rejected" type="submit" class="button">
-								<?php echo $reject_icon; ?> Reject
-							</button>
+							<form method="post" id="sidebar_form" enctype='multipart/form-data'>
+								<?php wp_nonce_field( 'gf_approvals' );	?>
+								<button name="gf_approvals_status" value="approved" type="submit" class="button">
+									<?php echo $approve_icon; ?> Approve
+								</button>
+								<button name="gf_approvals_status" value="rejected" type="submit" class="button">
+									<?php echo $reject_icon; ?> Reject
+								</button>
+							</form>
 						<?php
 						}
 						?>
