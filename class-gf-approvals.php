@@ -33,10 +33,10 @@ class GF_Approvals extends GFFeedAddOn {
 	protected $_full_path = __FILE__;
 
 	// Title of the plugin to be used on the settings page, form settings and plugins page.
-	protected $_title = _x( 'Gravity Forms Approvals', 'Add-On title', 'gravityformsapprovals' );
+	protected $_title = 'Gravity Forms Approvals';
 
 	// Short version of the plugin title to be used on menus and other places where a less verbose string is useful.
-	protected $_short_title = _x( 'Approvals', 'Add-On short title', 'gravityformsapprovals' );
+	protected $_short_title = 'Approvals';
 
 	private static $_instance = null;
 
