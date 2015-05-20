@@ -12,11 +12,17 @@ Add a simple approval workflow process to your forms.
 
 == Description ==
 
-Gravity Forms Approvals is an Add-On for [Gravity Forms](http://www.stevenhenty.com/gravityforms)
+Gravity Forms Approvals is an Add-On for [Gravity Forms](http://www.stevenhenty.com/gravityforms).
+
+Adds simple approval processes to forms.
 
 If you use it and like it [please consider giving it a rating](http://wordpress.org/plugins/gravityformsapprovals/).
 
-Facebook: [Steven Henty](https://www.facebook.com/hentydevelopment)
+Stay informed: [Facebook](https://www.facebook.com/hentydevelopment)
+More about me: [Steven Henty](http://www.stevenhenty.com)
+
+If this add-on doesn't quite meet your needs, or if you'd like an add-on that will grow with your workflow needs you may want to check out [Gravity Flow](http://gravityflow.io)
+
 
 = Requirements =
 
@@ -40,6 +46,12 @@ http://www.stevenhenty.com/contact/
 
 = Which license of Gravity Forms do I need? =
 Gravity Forms Approvals will work with any license of [Gravity Forms](http://www.stevenhenty.com/gravityforms).
+
+= What capabilities (permissions) do users need to approve? =
+Approvers need to be able to edit entries so they need the gravityforms_edit_entries capability
+
+= How do I edit the capabilities for a user/role? =
+You can use the [Members](https://wordpress.org/plugins/members/) plugin to edit the capabilities for each Role.
 
 
 == Screenshots ==
