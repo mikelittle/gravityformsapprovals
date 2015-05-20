@@ -7,6 +7,8 @@ Version: 1.0-beta-1
 Author: Steve Henty
 Author URI: http://www.stevenhenty.com
 License: GPL-2.0+
+Text Domain: gravityformsapprovals
+Domain Path: /languages/
 
 ------------------------------------------------------------------------
 Copyright 2015 Steven Henty
