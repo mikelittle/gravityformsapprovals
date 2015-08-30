@@ -3,12 +3,12 @@ Contributors: stevehenty
 Donate link: http://www.stevenhenty.com/products/wordpress-plugins/donate
 Tags: gravity forms, approvals, workflow
 Requires at least: 4.0
-Tested up to: 4.2.2
-Stable tag: 1.0-beta-2
+Tested up to: 4.3
+Stable tag: 1.0-beta-4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add a simple approval workflow process to your forms.
+Add simple approval workflow processes to your Gravity Forms.
 
 == Description ==
 
@@ -18,12 +18,9 @@ Adds simple approval processes to forms.
 
 If you use it and like it [please consider giving it a rating](http://wordpress.org/plugins/gravityformsapprovals/).
 
-Stay informed: [Facebook](https://www.facebook.com/hentydevelopment)
+If this add-on doesn't quite meet your needs, or if you'd like an add-on that will grow with your business workflow processes you may want to check out [Gravity Flow](https://gravityflow.io). Gravity Flow supports multiple steps, process branching and loops, user input, approval policies, advanced conditional routing, timestamps, audit trail, comments, and it has a complete interface for users for pending tasks, submitting forms, and viewing the status of previously submitted forms.
 
-More about me: [Steven Henty](http://www.stevenhenty.com)
-
-If this add-on doesn't quite meet your needs, or if you'd like an add-on that will grow with your workflow needs you may want to check out [Gravity Flow](http://gravityflow.io)
-
+Stay in touch on [Facebook](https://www.facebook.com/hentydevelopment) or visit my [blog](http://www.stevenhenty.com).
 
 = Requirements =
 
@@ -54,6 +51,9 @@ Approvers need to be able to edit entries so they need the gravityforms_edit_ent
 = How do I edit the capabilities for a user/role? =
 You can use the [Members](https://wordpress.org/plugins/members/) plugin to edit the capabilities for each Role.
 
+= I don't see the Approvals Form Settings tab =
+Ensure your role is assigned the gravityformsapprovals_form_settings capability using the Members plugin.
+
 
 == Screenshots ==
 
@@ -67,6 +67,19 @@ You can use the [Members](https://wordpress.org/plugins/members/) plugin to edit
 
 == ChangeLog ==
 
+= 1.0-beta-5 =
+- Fixed an issue where User Registration is skipped even when there are no approval feeds.
+- Fixed an issue where the approval buttons appear even when conditional logic is not met.
+
+= 1.0-beta-4 =
+- Added the gravityformsapprovals_form_settings and gravityformsapprovals_uninstall capabilities for integration with the Members plugin.
+- Updated some strings to be translatable.
+- Fixed an issue with form settings tab which might not appear under certain conditions.
+
+= 1.0-beta-3 =
+Fixed an issue with the entry detail page where the approval buttons won't appear if the approver is changed in the feed settings.
+
+
 = 1.0-beta-2 =
 Adding support for translations
 
@@ -74,6 +87,9 @@ Adding support for translations
 Initial release
 
 == Upgrade Notice ==
+
+= 1.0-beta-3 =
+Fixed an issue with the entry detail page where the approval buttons won't appear if the approver is changed in the feed settings.
 
 = 1.0-beta-2 =
 Adding support for translations
