@@ -1,4 +1,13 @@
 -------------------------------------------------------------------------------------------------------------------
+Version 1.0.1
+	- Added the gform_approvals_entry_rejected action which fires when an entry is rejected.
+	- Added the gform_approvals_entry_approved action which fires when an entry is approved. Example:
+	add_filter( 'gform_approvals_entry_approved', 'sh_gform_approvals_entry_approved', 10, 2 );
+	function sh_gform_approvals_entry_approved( $entry, $form ){
+		// do something now the entry is approved
+	}
+
+-------------------------------------------------------------------------------------------------------------------
 Version 1.0.0
 	- Bumping version
 

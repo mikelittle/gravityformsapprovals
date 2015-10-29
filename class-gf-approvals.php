@@ -291,6 +291,7 @@ class GF_Approvals extends GFFeedAddOn {
 			if ( $entry_rejected ) {
 				gform_update_meta( $entry['id'], 'approval_status', 'rejected' );
 				$entry['approval_status'] = 'rejected';
+				do_action( 'gform_approvals_entry_rejected', $entry, $form );
 			} elseif ( $entry_approved ) {
 				gform_update_meta( $entry['id'], 'approval_status', 'approved' );
 				$entry['approval_status'] = 'approved';
@@ -304,6 +305,7 @@ class GF_Approvals extends GFFeedAddOn {
 				if ( class_exists( 'GFZapier' ) ) {
 					GFZapier::send_form_data_to_zapier( $entry, $form );
 				}
+				do_action( 'gform_approvals_entry_approved', $entry, $form );
 			}
 
 			$notifications_to_send = GFCommon::get_notifications_to_send( 'form_approval', $form, $entry );
