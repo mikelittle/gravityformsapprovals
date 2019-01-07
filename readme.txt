@@ -3,7 +3,7 @@ Contributors: stevehenty
 Donate link: http://www.stevenhenty.com/products/wordpress-plugins/donate
 Tags: gravity forms, approvals, workflow
 Requires at least: 4.0
-Tested up to: 4.3
+Tested up to: 5.0
 Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -66,6 +66,13 @@ Ensure your role is assigned the gravityformsapprovals_form_settings capability 
 
 
 == ChangeLog ==
+
+= 1.0.2 =
+- Fixed an issue where approvers can't add notes.
+
+= 1.0.1 =
+- Added the gform_approvals_entry_rejected action which fires when an entry is rejected.
+- Added the gform_approvals_entry_approved action which fires when an entry is approved.
 
 = 1.0.0 =
 - Bumping version

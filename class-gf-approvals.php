@@ -18,7 +18,7 @@ class GF_Approvals extends GFFeedAddOn {
 	protected $_version = GF_APPROVALS_VERSION;
 
 	// The Framework will display an appropriate message on the plugins page if necessary
-	protected $_min_gravityforms_version = '1.9';
+	protected $_min_gravityforms_version = '2.4';
 
 	// A short, lowercase, URL-safe unique identifier for the add-on.
 	// This will be used for storing options, filters, actions, URLs and text-domain localization.
@@ -255,7 +255,7 @@ class GF_Approvals extends GFFeedAddOn {
 	 * @param array  $entry The Entry Object
 	 * @param array  $form  The Form Object
 	 *
-	 * @return string|void
+	 * @return string
 	 */
 	function update_approval_status( $key, $entry, $form ) {
 		return 'pending';
@@ -360,7 +360,6 @@ class GF_Approvals extends GFFeedAddOn {
 					<?php
 					if ( $current_user_is_approver ) {
 						?>
-						<form method="post" id="sidebar_form" enctype='multipart/form-data'>
 							<?php wp_nonce_field( 'gf_approvals' );	?>
 							<button name="gf_approvals_status" value="approved" type="submit" class="button">
 								<?php echo $approve_icon; ?> <?php _e( 'Approve', 'gravityformsapprovals' ); ?>
@@ -368,7 +367,6 @@ class GF_Approvals extends GFFeedAddOn {
 							<button name="gf_approvals_status" value="rejected" type="submit" class="button">
 								<?php echo $reject_icon; ?> <?php _e( 'Reject', 'gravityformsapprovals' ); ?>
 							</button>
-						</form>
 					<?php
 					}
 					?>
