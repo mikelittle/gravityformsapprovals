@@ -3,8 +3,8 @@ Contributors: stevehenty
 Donate link: http://www.stevenhenty.com/products/wordpress-plugins/donate
 Tags: gravity forms, approvals, workflow
 Requires at least: 4.0
-Tested up to: 5.0
-Stable tag: 1.0.1
+Tested up to: 5.0.3
+Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Add simple approval workflow processes to your Gravity Forms.
 
 == Description ==
 
-Gravity Forms Approvals is an Add-On for [Gravity Forms](http://www.stevenhenty.com/gravityforms).
+Gravity Forms Approvals is an Add-On for [Gravity Forms](http://www.stevenhenty.com/gravityforms). (Affiliate link)
 
 Adds simple approval processes to forms.
 
@@ -24,7 +24,7 @@ Stay in touch on [Facebook](https://www.facebook.com/hentydevelopment) or visit 
 
 = Requirements =
 
-1. [Purchase and install Gravity Forms](http://www.stevenhenty.com/gravityforms)
+1. [Purchase and install Gravity Forms](http://www.stevenhenty.com/gravityforms) (Affiliate link)
 2. Wordpress 4.2+
 3. Gravity Forms 1.9.4+
 
@@ -43,7 +43,7 @@ http://www.stevenhenty.com/contact/
 == Frequently Asked Questions ==
 
 = Which license of Gravity Forms do I need? =
-Gravity Forms Approvals will work with any license of [Gravity Forms](http://www.stevenhenty.com/gravityforms).
+Gravity Forms Approvals will work with any license of [Gravity Forms](http://www.stevenhenty.com/gravityforms). (Affiliate link)
 
 = What capabilities (permissions) do users need to approve? =
 Approvers need to be able to edit entries so they need the gravityforms_edit_entries capability
@@ -67,7 +67,8 @@ Ensure your role is assigned the gravityformsapprovals_form_settings capability 
 
 == ChangeLog ==
 
-= 1.0.2 =
+= 1.1 =
+- Bumped minimum version of Gravity Forms required to 2.4.
 - Fixed an issue where approvers can't add notes.
 
 = 1.0.1 =

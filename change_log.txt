@@ -1,4 +1,9 @@
 -------------------------------------------------------------------------------------------------------------------
+Version 1.1
+	- Bump minimum version of Gravity Forms required to 2.4.
+	- Fixed an issue where approvers can't add notes.
+
+-------------------------------------------------------------------------------------------------------------------
 Version 1.0.1
 	- Added the gform_approvals_entry_rejected action which fires when an entry is rejected.
 	- Added the gform_approvals_entry_approved action which fires when an entry is approved. Example:
