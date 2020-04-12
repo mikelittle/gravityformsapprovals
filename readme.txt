@@ -67,6 +67,9 @@ Ensure your role is assigned the gravityformsapprovals_form_settings capability 
 
 == ChangeLog ==
 
+= 1.2 =
+- Fixed an issue with the Members plugin integration
+
 = 1.1 =
 - Bumped minimum version of Gravity Forms required to 2.4.
 - Fixed an issue where approvers can't add notes.
@@ -98,6 +101,9 @@ Adding support for translations
 Initial release
 
 == Upgrade Notice ==
+
+= 1.2 =
+- Fixed an issue with the Members plugin integration
 
 = 1.0-beta-3 =
 Fixed an issue with the entry detail page where the approval buttons won't appear if the approver is changed in the feed settings.
