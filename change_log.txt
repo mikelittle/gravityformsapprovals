@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------------------------------------------
+Version 1.2
+	- Fixed an issue with the integration of the Members plugins.
+
+-------------------------------------------------------------------------------------------------------------------
 Version 1.1
 	- Bump minimum version of Gravity Forms required to 2.4.
 	- Fixed an issue where approvers can't add notes.
