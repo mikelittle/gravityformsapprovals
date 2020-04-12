@@ -12,7 +12,7 @@ Add simple approval workflow processes to your Gravity Forms.
 
 == Description ==
 
-Gravity Forms Approvals is an Add-On for [Gravity Forms](http://www.stevenhenty.com/gravityforms). (Affiliate link)
+Gravity Forms Approvals is an Add-On for [Gravity Forms](http://www.stevenhenty.com/out/gravityforms). (Affiliate link)
 
 Adds simple approval processes to forms.
 
