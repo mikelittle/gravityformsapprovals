@@ -49,12 +49,12 @@ class GF_Approvals extends GFFeedAddOn {
 	/**
 	 * @var string|array A string or an array of capabilities or roles that have access to the form settings
 	 */
-	protected $_capabilities_form_settings = array( 'gravityformsapprovals_form_settings' );
+	protected $_capabilities_form_settings = 'gravityformsapprovals_form_settings';
 
 	/**
 	 * @var string|array A string or an array of capabilities or roles that can uninstall the plugin
 	 */
-	protected $_capabilities_uninstall = array( 'gravityformsapprovals_uninstall' );
+	protected $_capabilities_uninstall = 'gravityformsapprovals_uninstall';
 
 
 	private static $_instance = null;
