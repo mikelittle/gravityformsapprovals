@@ -5,3 +5,5 @@
 # Files
 /.gitattributes export-ignore
 /.gitignore export-ignore
+/change_log.txt export-ignore
+/readme.md export-ignore
