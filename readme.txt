@@ -1,7 +1,7 @@
 === Gravity Forms Approvals Add-On ===
 Contributors: stevehenty
 Tags: gravity forms, approvals, workflow
-Requires at least: 4.0
+Requires at least: 5.2
 Tested up to: 5.6.2
 Stable tag: 1.2
 License: GPLv2 or later
@@ -94,12 +94,11 @@ Yes!
 4. Notification configuration
 5. Pending approval
 6. Approved
-7. Example vacation request form
-8. Conditional approval for different approvers
-9. More conditional logic
-10. Conditional notifications on form submission
 
 == ChangeLog ==
+
+= 1.2.1 =
+- Bumped tested up to and minimum versions.
 
 = 1.2 =
 - Fixed an issue with the Members plugin integration
