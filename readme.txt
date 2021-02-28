@@ -51,8 +51,8 @@ Gravity Flow is trusted by customers from the City University of New York to Ver
 = Requirements =
 
 1. [Purchase and install Gravity Forms](http://www.stevenhenty.com/out/gravityforms) (Affiliate link)
-2. Wordpress 4.2+
-3. Gravity Forms 1.9.4+
+2. WordPress 5.2+
+3. The latest version of Gravity Forms.
 
 
 = Support =
