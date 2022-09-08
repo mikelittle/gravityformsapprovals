@@ -275,6 +275,7 @@ class GF_Approvals extends GFFeedAddOn {
 			$entry[ 'approval_status_' . $current_user->ID ] = $new_status;
 			$entry_approved = true;
 			$entry_rejected = false;
+			$approval_count = 0;
 			foreach ( $this->get_feeds( $form['id'] ) as $feed ) {
 				if ( $feed['is_active'] && $this->is_feed_condition_met( $feed, $form, $entry ) ) {
 					$approver = $feed['meta']['approver'];
@@ -285,8 +286,15 @@ class GF_Approvals extends GFFeedAddOn {
 						if ( $new_status == 'rejected' ) {
 							$entry_rejected = true;
 						}
+						if ( $new_status == 'approved' ) {
+							++$approval_count;
+						}
 					}
 				}
+			}
+			if ( $approval_count > 0 ) {
+				$entry_rejected = false;
+				$entry_approved = true;
 			}
 			if ( $entry_rejected ) {
 				gform_update_meta( $entry['id'], 'approval_status', 'rejected' );
