@@ -1,0 +1,14 @@
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - before: >
+      [[ ! -z $SIGNING_KEY  ]] &&
+      gpg --verbose --batch --import <(echo $SIGNING_KEY|base64 -d) &&
+      echo 'pinentry-mode loopback' >> ~/.gnupg/gpg.conf &&
+      git config --global user.signingkey $SIGNING_KEY_ID &&
+      git config --global user.email $SIGNING_EMAIL &&
+      git config --global commit.gpgsign true
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+# ports:
+#   - port: 3000
+#     onOpen: open-preview
